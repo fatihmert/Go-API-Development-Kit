@@ -63,12 +63,12 @@ air
 # TODO
 
 - [ ] Code generation from models
-      - [ ] Repository template 
-            - [x] All
-            - [x] FindFromId
-            - [ ] Update
-            - [ ] Delete
-            - [ ] Where Condition
+    - [ ] Repository template 
+        - [x] All
+        - [x] FindFromId
+        - [ ] Update
+        - [ ] Delete
+        - [ ] Where Condition
 - [ ] Add mail class
 - [ ] Re-structured MVVM (repository) sturcutured
 - [ ] Manage structured via sqlite
