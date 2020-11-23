@@ -7,6 +7,7 @@ import (
 	"os"
 
 	"apidev.fatihmert.dev/controllers"
+	"apidev.fatihmert.dev/models"
 	"apidev.fatihmert.dev/states"
 
 	//3rd
@@ -86,11 +87,11 @@ func setupRoutes(app *fiber.App) {
 	})
 
 	// test
-	/* app.Get("/users", func(c *fiber.Ctx) error {
+	app.Get("/users", func(c *fiber.Ctx) error {
 		return c.JSON(&fiber.Map{
 			"data": new(models.User).All(),
 		})
-	}) */
+	})
 }
 
 func main() {
