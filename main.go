@@ -67,12 +67,30 @@ func setupRoutes(app *fiber.App) {
 	api.Post("/login", controllers.Login)
 	api.Post("/register", controllers.Register)
 
+	/* api.Get("/users", func(c *fiber.Ctx) error {
+		return c.JSON(&fiber.Map{
+			"data": new(models.User).All(),
+		})
+	})
+	api.Get("/user-1", func(c *fiber.Ctx) error {
+		return c.JSON(&fiber.Map{
+			"data": new(models.User).FindFromId(1),
+		})
+	}) */
+
 	// Hello World
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.JSON(&fiber.Map{
 			"message": "Hello World!",
 		})
 	})
+
+	// test
+	/* app.Get("/users", func(c *fiber.Ctx) error {
+		return c.JSON(&fiber.Map{
+			"data": new(models.User).All(),
+		})
+	}) */
 }
 
 func main() {

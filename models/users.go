@@ -6,3 +6,7 @@ type User struct {
 	Password string `db:"password"`
 	Token    string `db:"token"`
 }
+
+func (tbl *User) TableName() string {
+	return "users"
+}
