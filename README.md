@@ -25,13 +25,11 @@ func (tbl *User) TableName() string {
 }
 ```
 
-# q CLI Guides
-
-Show help commands
-
-```
-go run q -h
-```
+[comment]: <> (# q CLI Guides)
+[comment]: <> (Show help commands)
+[comment]: <> (```)
+[comment]: <> (go run q -h)
+[comment]: <> (```)
 
 ## Generate repositories from models dir
 
