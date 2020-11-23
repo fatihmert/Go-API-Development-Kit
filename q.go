@@ -45,7 +45,7 @@ func ParseRepositoriesFromModelsDirectory(debug bool) bool {
 	*/
 	var models []string
 	err := filepath.Walk(modelPath, func(path string, info os.FileInfo, err error) error {
-		if path != modelPath && !strings.Contains(path, "repo") {
+		if path != modelPath && !strings.Contains(path, "_repo") {
 			models = append(models, path)
 
 			if debug {
